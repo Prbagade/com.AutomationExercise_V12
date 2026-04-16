@@ -1,0 +1,108 @@
+package com.TestCases;
+
+import org.testng.annotations.Test;
+
+import com.PageObject.AddToCartPage;
+import com.PageObject.CheckOutPage;
+import com.PageObject.HomePage;
+import com.PageObject.LoginPage;
+import com.PageObject.OrderPlacedPage;
+import com.PageObject.PaymentPage;
+import com.PageObject.ProductsPage;
+import com.TestBase.BaseClass;
+
+public class TC004_UserLoginTest extends BaseClass{
+
+	@Test
+	public void Verify_UserWorkFlow() throws InterruptedException 
+	{
+		logger.info("*************Strting TC004_UserLogin**************");
+		
+		HomePage hp = new HomePage(driver);
+		logger.info("***********Clicked on SignIn button***************");
+		hp.ClickOnSignIn();
+		
+		Thread.sleep(1000);
+		
+		logger.info("***********Login credentials Entering***************");
+		LoginPage lp = new LoginPage(driver);
+		lp.EnterUserEmailID("prafulbagade4@gmail.com");
+		lp.EnterPassword("Praful@1234");
+		
+		
+		logger.info("***********Clicked on LogIn button***************");
+		lp.ClickOnLogin();
+		
+		Thread.sleep(1000);
+		hp.ClickOnProducts();		
+		logger.info("***********Clicked on Product page***************");
+		
+		
+		ProductsPage pd = new ProductsPage(driver);
+		logger.info("*********** search product ***************");
+		pd.EnterProducts("jeans");
+		pd.ClickOnSearch();
+		pd.VerifyResults();
+		Thread.sleep(1000);
+		
+		logger.info("*********** Add to cart product ***************");
+		pd.ClickOnAddTocart();
+		Thread.sleep(1000);
+		
+		pd.ClickOnContinueShop();
+		
+		logger.info("*********** Click on Add to cart page ***************");
+		hp.ClickOnAddToCart();
+		
+		AddToCartPage add = new AddToCartPage(driver);
+		
+		
+		logger.info("*********** verify the add to cart product details ***************");
+		Thread.sleep(1000);
+		add.ClickOnProdDetails();
+		add.ClickOnProdPrice();
+		Thread.sleep(1000);
+		add.ClickOnProdQty();
+		add.ClickOnProdTotalprice();
+		
+		Thread.sleep(1000);
+		
+		logger.info("*********** Add to cart product checkout ***************");
+		add.ClickOnProdCheckOut();
+		
+		
+		CheckOutPage chq = new CheckOutPage(driver);
+		Thread.sleep(2000);
+		chq.ClickOnPlaceOrder();
+		logger.info("*********** Verify the checkout details  ***************");
+		
+		
+		PaymentPage pay = new PaymentPage(driver);
+		
+		logger.info("*********** Add payement details ***************");
+		Thread.sleep(1000);
+		pay.EnterNameOnCard("prafulbagade");
+		pay.EnterCardNum("123456789");
+		pay.EnterCVCnum("441");
+		pay.EnterExpiry("10");
+		pay.EnterYears("2028");
+		
+		Thread.sleep(1000);
+		
+		logger.info("*********** verify confirm the payement details ***************");
+		pay.ClickOnPayAndConf();
+		
+		OrderPlacedPage ord = new OrderPlacedPage(driver);
+		
+		
+		logger.info("*********** Get a product invoice details ***************");
+		Thread.sleep(1000);
+		ord.ClickOnInvoice();
+		Thread.sleep(1000);
+		ord.ClickOnContinue();
+		logger.info("*********** contineu shopping  ***************");
+		
+		logger.info("*************Finished TC004_UserLogin**************");
+		
+	}
+}

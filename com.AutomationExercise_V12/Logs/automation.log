@@ -1,0 +1,41 @@
+17:18:46:621 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+17:18:46:645 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+17:18:46:648 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+17:18:46:649 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+17:18:46:670 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+17:18:46:671 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+17:18:46:672 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+17:18:46:689 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+17:18:46:690 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+17:18:46:691 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+17:18:46:714 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+17:18:46:715 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+17:18:46:716 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+17:18:46:733 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+17:18:46:735 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+17:18:46:735 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+17:18:46:752 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+17:18:46:753 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+17:18:46:753 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+17:18:53:885 [main] INFO  com.TestCases.TC005_LoginDDT - ********Starting TC002_LoginPageTest ***********
+17:18:55:128 [main] INFO  com.TestCases.TC005_LoginDDT - ************Clicked On SignIn button***************
+17:18:57:138 [main] INFO  com.TestCases.TC005_LoginDDT - *********Entering login Credentials**************
+17:19:00:914 [main] INFO  com.TestCases.TC005_LoginDDT - **********Validate Profil Name**************
+17:19:03:242 [main] INFO  com.TestCases.TC005_LoginDDT - ***********Finished Starting TC002_LoginPageTest*************
+17:19:11:183 [main] INFO  com.TestCases.TC005_LoginDDT - ********Starting TC002_LoginPageTest ***********
+17:19:12:429 [main] INFO  com.TestCases.TC005_LoginDDT - ************Clicked On SignIn button***************
+17:19:14:437 [main] INFO  com.TestCases.TC005_LoginDDT - *********Entering login Credentials**************
+17:19:17:703 [main] INFO  com.TestCases.TC005_LoginDDT - **********Validate Profil Name**************
+17:19:36:863 [main] INFO  com.TestCases.TC005_LoginDDT - ********Starting TC002_LoginPageTest ***********
+17:19:37:781 [main] INFO  com.TestCases.TC005_LoginDDT - ************Clicked On SignIn button***************
+17:19:39:795 [main] INFO  com.TestCases.TC005_LoginDDT - *********Entering login Credentials**************
+17:19:41:167 [main] INFO  com.TestCases.TC005_LoginDDT - **********Validate Profil Name**************
+17:20:00:703 [main] INFO  com.TestCases.TC005_LoginDDT - ********Starting TC002_LoginPageTest ***********
+17:20:02:776 [main] INFO  com.TestCases.TC005_LoginDDT - ************Clicked On SignIn button***************
+17:20:04:791 [main] INFO  com.TestCases.TC005_LoginDDT - *********Entering login Credentials**************
+17:20:06:794 [main] INFO  com.TestCases.TC005_LoginDDT - **********Validate Profil Name**************
+17:20:28:937 [main] INFO  com.TestCases.TC002_LoginPageTest - ********Starting TC002_LoginPageTest ***********
+17:20:32:352 [main] INFO  com.TestCases.TC002_LoginPageTest - ************Clicked On SignIn button***************
+17:20:34:356 [main] INFO  com.TestCases.TC002_LoginPageTest - *********Entering login Credentials**************
+17:20:38:242 [main] INFO  com.TestCases.TC002_LoginPageTest - **********Validate Profil Name**************
+17:20:39:322 [main] INFO  com.TestCases.TC002_LoginPageTest - ***********Click on Logout button*************

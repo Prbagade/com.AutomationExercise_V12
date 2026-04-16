@@ -1,0 +1,24 @@
+package TestCases;
+
+import PageObjectModel.HomePage;
+import PageObjectModel.LoginPage;
+import TestBase.BaseClass;
+
+public class TC001_AccountRegisterTest extends BaseClass
+{
+
+	void Acc_Registration() 
+	{
+		HomePage hp = new HomePage(driver);
+		hp.ClickOnSignIn();
+		
+		
+		LoginPage lp = new LoginPage(driver);
+		lp.ClickOnNewAcc();
+		
+		
+		
+	}
+	
+	
+}

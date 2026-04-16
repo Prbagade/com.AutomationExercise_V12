@@ -1,0 +1,45 @@
+17:29:28:470 [main] INFO  com.TestCases.TC002_LoginPageTest - ********Starting TC002_LoginPageTest ***********
+17:29:31:628 [main] INFO  com.TestCases.TC002_LoginPageTest - ************Clicked On SignIn button***************
+17:29:33:635 [main] INFO  com.TestCases.TC002_LoginPageTest - *********Entering login Credentials**************
+17:29:33:884 [main] INFO  com.TestCases.TC002_LoginPageTest - **********Validate Profil Name**************
+17:29:37:085 [main] INFO  com.TestCases.TC002_LoginPageTest - ***********Click on Logout button*************
+17:29:41:148 [main] INFO  com.TestCases.TC002_LoginPageTest - ***********Finished Starting TC002_LoginPageTest*************
+17:46:55:777 [main] INFO  com.TestCases.TC004_UserLogin - *************Strting TC004_UserLogin**************
+17:46:55:812 [main] INFO  com.TestCases.TC004_UserLogin - ***********Clicked on SignIn button***************
+17:46:57:912 [main] INFO  com.TestCases.TC004_UserLogin - ***********Login credentials Entering***************
+17:46:58:109 [main] INFO  com.TestCases.TC004_UserLogin - ***********Clicked on LogIn button***************
+17:47:05:932 [main] INFO  com.TestCases.TC004_UserLogin - ***********Clicked on Product page***************
+17:47:05:935 [main] INFO  com.TestCases.TC004_UserLogin - *********** search product ***************
+17:47:10:530 [main] INFO  com.TestCases.TC004_UserLogin - *********** Add to cart product ***************
+17:47:11:694 [main] INFO  com.TestCases.TC004_UserLogin - *********** Click on Add to cart page ***************
+17:47:13:559 [main] INFO  com.TestCases.TC004_UserLogin - *********** verify the add to cart product details ***************
+17:47:16:769 [main] INFO  com.TestCases.TC004_UserLogin - *********** Add to cart product checkout ***************
+17:47:21:051 [main] INFO  com.TestCases.TC004_UserLogin - *********** Verify the checkout details  ***************
+17:47:21:054 [main] INFO  com.TestCases.TC004_UserLogin - *********** Add payement details ***************
+17:47:23:406 [main] INFO  com.TestCases.TC004_UserLogin - *********** verify confirm the payement details ***************
+17:47:25:764 [main] INFO  com.TestCases.TC004_UserLogin - *********** Get a product invoice details ***************
+17:47:31:132 [main] INFO  com.TestCases.TC004_UserLogin - *********** contineu shopping  ***************
+17:47:31:132 [main] INFO  com.TestCases.TC004_UserLogin - *************Finished TC004_UserLogin**************
+17:54:31:413 [main] INFO  com.TestCases.TC001_RegisterPageTest - ************starting TC001_RegisterPageTest************
+17:54:33:260 [main] INFO  com.TestCases.TC001_RegisterPageTest - ************Clicking on SignIn************
+17:54:35:267 [main] INFO  com.TestCases.TC001_RegisterPageTest - ************Register account************
+17:54:38:267 [main] INFO  com.TestCases.TC001_RegisterPageTest - ************User details************
+18:06:18:290 [main] INFO  com.TestCases.TC001_RegisterPageTest - ************starting TC001_RegisterPageTest************
+18:06:19:501 [main] INFO  com.TestCases.TC001_RegisterPageTest - ************Clicking on SignIn************
+18:06:21:512 [main] INFO  com.TestCases.TC001_RegisterPageTest - ************Register account************
+18:06:24:212 [main] INFO  com.TestCases.TC001_RegisterPageTest - ************User details************
+18:06:40:445 [main] INFO  com.TestCases.TC002_LoginPageTest - ********Starting TC002_LoginPageTest ***********
+18:06:43:239 [main] INFO  com.TestCases.TC002_LoginPageTest - ************Clicked On SignIn button***************
+18:06:45:252 [main] INFO  com.TestCases.TC002_LoginPageTest - *********Entering login Credentials**************
+18:06:48:750 [main] INFO  com.TestCases.TC002_LoginPageTest - **********Validate Profil Name**************
+18:06:49:788 [main] INFO  com.TestCases.TC002_LoginPageTest - ***********Click on Logout button*************
+18:06:52:230 [main] INFO  com.TestCases.TC002_LoginPageTest - ***********Finished Starting TC002_LoginPageTest*************
+18:06:58:083 [main] INFO  com.TestCases.TC004_UserLoginTest - *************Strting TC004_UserLogin**************
+18:06:58:085 [main] INFO  com.TestCases.TC004_UserLoginTest - ***********Clicked on SignIn button***************
+18:07:03:864 [main] INFO  com.TestCases.TC004_UserLoginTest - ***********Login credentials Entering***************
+18:07:04:113 [main] INFO  com.TestCases.TC004_UserLoginTest - ***********Clicked on LogIn button***************
+18:07:10:803 [main] INFO  com.TestCases.TC004_UserLoginTest - ***********Clicked on Product page***************
+18:07:10:806 [main] INFO  com.TestCases.TC004_UserLoginTest - *********** search product ***************
+18:07:14:759 [main] INFO  com.TestCases.TC004_UserLoginTest - *********** Add to cart product ***************
+18:07:15:918 [main] INFO  com.TestCases.TC004_UserLoginTest - *********** Click on Add to cart page ***************
+18:07:18:375 [main] INFO  com.TestCases.TC004_UserLoginTest - *********** verify the add to cart product details ***************

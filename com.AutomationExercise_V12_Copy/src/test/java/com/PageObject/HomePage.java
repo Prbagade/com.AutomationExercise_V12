@@ -1,0 +1,49 @@
+package com.PageObject;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+
+public class HomePage extends BasePage {
+
+	public HomePage(WebDriver driver) {
+
+		super(driver);
+	}
+
+	@FindBy(xpath = "//*[@class='fa fa-lock']")  WebElement btn_signIn;	
+	
+	@FindBy(xpath = "//*[text()='prafull']") WebElement img_profilName;
+
+	@FindBy(xpath = "//*[@href='/products']") WebElement btn_products;
+
+	@FindBy(xpath = "//a[@href='/view_cart']//i") WebElement btn_AddToCart;
+	
+	@FindBy(xpath = "//a[@href='/logout']") WebElement btn_LogOut;
+	
+	public void ClickOnSignIn() 
+	{
+		btn_signIn.click();
+	}
+	
+	public void VerifyProfilName() 
+	{
+		System.out.println("Profile Name: "+img_profilName.getText());
+	}
+	
+	public void ClickOnProducts() 
+	{
+		btn_products.click();
+	}
+
+	public void ClickOnAddToCart() 
+	{
+		btn_AddToCart.click();
+	}
+	
+	public void ClickOnLogOut() 
+	{
+		btn_LogOut.click();
+	}
+	
+}

@@ -1,0 +1,47 @@
+package DemoSelenium;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.edge.EdgeDriver;
+
+public class webTable {
+
+	public static void main(String[] args) throws InterruptedException {
+
+	
+		WebDriver driver = new EdgeDriver();
+
+		driver.get("https://testautomationpractice.blogspot.com/");
+		driver.manage().window().maximize();
+
+		//total row 
+		int rows=driver.findElements(By.xpath("//table[@name='BookTable']//tr")).size();
+		System.out.println(rows);
+		
+		
+		//total column
+		int cols=driver.findElements(By.xpath("//table[@name='BookTable']//th")).size();
+		System.out.println(cols);
+		
+		
+		//cell value
+		String cellValue =driver.findElement(By.xpath("//table[@name='BookTable']//tr[4]/td[3]")).getText();
+		System.out.println(cellValue);
+		
+		for(int r=1;r<=rows;r++) 
+		{
+			for(int c=1;c<=cols;c++) 
+			{
+				System.out.println(r+" "+c);
+			}
+		}	
+		
+		
+		Thread.sleep(2000);
+		driver.quit();
+		
+		
+	}
+
+}

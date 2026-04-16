@@ -1,0 +1,18 @@
+package Parametarization;
+
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+
+public class WrittingExcelData {
+
+	public static void main(String[] args) throws FileNotFoundException {
+
+		
+		FileOutputStream file = new FileOutputStream(System.getProperty("user.dir")+"\\TestData\\Myexcel.xlsx");
+		
+		
+		
+		
+	}
+
+}

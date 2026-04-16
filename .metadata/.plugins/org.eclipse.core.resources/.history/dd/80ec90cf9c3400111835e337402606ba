@@ -1,0 +1,14 @@
+package Parametarization;
+
+import java.io.FileOutputStream;
+
+public class WrittingExcelData {
+
+	public static void main(String[] args) {
+
+		FileOutputStream file = new FileOutputStream(System.getProperty("user.dir")+"");
+		
+		
+	}
+
+}

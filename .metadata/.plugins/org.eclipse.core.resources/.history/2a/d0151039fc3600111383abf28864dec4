@@ -1,0 +1,25 @@
+package com.PageObject;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+
+public class RegisterPage extends BasePage  {
+
+	public RegisterPage(WebDriver driver) 
+	{
+		super(driver);
+	}
+	
+	
+	
+	@FindBy(xpath = "//input[@id='id_gender1']") WebElement rd_Gender;
+	@FindBy(xpath = "//input[@id='password']") WebElement txt_password;
+	@FindBy(xpath = "") WebElement ss;
+	@FindBy(xpath = "") WebElement ss;
+	
+	
+	
+
+	
+}

@@ -1,0 +1,29 @@
+package TestBase;
+
+import java.time.Duration;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class BaseClass {
+
+	
+	public WebDriver driver;
+	
+	void Browsersetup()
+	{
+		driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.get("https://www.bjs.com/");
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		driver.manage().deleteAllCookies();
+	}
+	
+	
+	void CloseBrowser() throws InterruptedException 
+	{
+		Thread.sleep(2000);
+		driver.quit();
+	}
+	
+}

@@ -1,0 +1,17 @@
+package TestBase;
+
+import org.openqa.selenium.WebDriver;
+
+public class BaseClass {
+
+	
+	public WebDriver driver;
+	
+	void Browsersetup()
+	{
+		driver = new ChromeDriver();
+		
+	}
+	
+	
+}

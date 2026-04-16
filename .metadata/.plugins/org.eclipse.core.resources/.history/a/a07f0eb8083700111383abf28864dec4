@@ -1,0 +1,86 @@
+package com.PageObject;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.Select;
+
+public class RegisterPage extends BasePage  {
+
+	
+	public RegisterPage(WebDriver driver) 
+	{
+		super(driver);
+	}
+	
+	
+	
+	@FindBy(xpath = "//input[@id='id_gender1']") WebElement rd_Gender;
+	@FindBy(xpath = "//input[@id='password']") WebElement txt_Password;
+	@FindBy(xpath = "//*[@value=4]") WebElement drp_spDay;
+	@FindBy(xpath = "//*[@value='4']") WebElement drp_Spmonth;
+	@FindBy(xpath = "//*[@value='2020']") WebElement drp_SpYear;
+	@FindBy(xpath = "//*[@id='first_name']") WebElement txt_Fname;
+	@FindBy(xpath = "//*[@id='last_name']") WebElement txt_Lname;
+	@FindBy(xpath = "//*[@id='address1']") WebElement txt_addr;
+	@FindBy(xpath = "//*[@value='India']") WebElement drp_country;
+	@FindBy(xpath = "//*[@id='state']") WebElement txt_State;
+	@FindBy(xpath = "//*[@id='city']") WebElement txt_city;
+	@FindBy(xpath = "//*[@id='zipcode']") WebElement txt_zipcode;
+	@FindBy(xpath = "//*[@id='mobile_number']") WebElement txt_MobileNum;
+	@FindBy(xpath = "//*[text()='Create Account']") WebElement btn_CreateAcc;
+	
+	public void SelectGender() 
+	{
+		rd_Gender.click();
+	}
+	
+	public void EnterPassword(String pass) 
+	{
+		txt_Password.sendKeys(pass);
+	}
+	
+	public void SelectDate() 
+	{
+		drp_spDay.click();
+		
+	}
+	
+	public void SelectMonth() 
+	{
+		drp_Spmonth.click();
+	}
+	
+	public void SelectYear() 
+	{
+		drp_SpYear.click();
+	}
+	
+	public void EnterFirstname(String fname) 
+	{
+		txt_Fname.sendKeys(fname);
+	}
+	
+	
+	public void EnterLastname(String lname) 
+	{
+		txt_Lname.sendKeys(lname);
+	}
+	
+	public void SelectMonth() 
+	{
+		
+	}
+	
+		
+	
+	
+	
+	
+	public void SelectCountry() 
+	{
+		drp_country.click();
+	}
+
+	
+}

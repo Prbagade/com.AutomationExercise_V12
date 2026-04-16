@@ -1,0 +1,14 @@
+package PageObjectModel;
+
+import org.openqa.selenium.WebDriver;
+
+public class RegisterPage extends{
+
+	public WebDriver driver;
+	
+	public RegisterPage(WebDriver driver) {
+	
+		super(driver);
+	}
+	
+}

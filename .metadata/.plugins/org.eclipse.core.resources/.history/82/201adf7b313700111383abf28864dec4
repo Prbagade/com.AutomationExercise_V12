@@ -1,0 +1,80 @@
+package com.TestCases;
+
+import org.testng.annotations.Test;
+
+import com.PageObject.AddToCartPage;
+import com.PageObject.CheckOutPage;
+import com.PageObject.HomePage;
+import com.PageObject.LoginPage;
+import com.PageObject.OrderPlacedPage;
+import com.PageObject.PaymentPage;
+import com.PageObject.ProductsPage;
+import com.TestBase.BaseClass;
+
+public class TC004_UserLogin extends BaseClass{
+
+	@Test
+	public void Verify_UserWorkFlow() throws InterruptedException 
+	{
+		HomePage hp = new HomePage(driver);
+		hp.ClickOnSignIn();
+		
+		Thread.sleep(1000);
+		LoginPage lp = new LoginPage(driver);
+		lp.EnterUserEmailID("prafulbagade4@gmail.com");
+		lp.EnterPassword("Praful@1234");
+		lp.ClickOnLogin();
+		
+		Thread.sleep(1000);
+		hp.ClickOnProducts();		
+		
+		ProductsPage pd = new ProductsPage(driver);
+		pd.EnterProducts("jeans");
+		pd.ClickOnSearch();
+		pd.VerifyResults();
+		Thread.sleep(1000);
+		pd.ClickOnAddTocart();
+		Thread.sleep(1000);
+		pd.ClickOnContinueShop();
+		
+		hp.ClickOnAddToCart();
+		
+		AddToCartPage add = new AddToCartPage(driver);
+		
+		Thread.sleep(1000);
+		add.ClickOnProdDetails();
+		add.ClickOnProdPrice();
+		Thread.sleep(1000);
+		add.ClickOnProdQty();
+		add.ClickOnProdTotalprice();
+		
+		Thread.sleep(1000);
+		add.ClickOnProdCheckOut();
+		
+		
+		CheckOutPage chq = new CheckOutPage(driver);
+		Thread.sleep(2000);
+		chq.ClickOnPlaceOrder();
+		
+		PaymentPage pay = new PaymentPage(driver);
+		
+		Thread.sleep(1000);
+		pay.EnterNameOnCard("prafulbagade");
+		pay.EnterCardNum("123456789");
+		pay.EnterCVCnum("441");
+		pay.EnterExpiry("10");
+		pay.EnterYears("2028");
+		
+		Thread.sleep(1000);
+		pay.ClickOnPayAndConf();
+		
+		OrderPlacedPage ord = new OrderPlacedPage(driver);
+		
+		Thread.sleep(1000);
+		ord.ClickOnInvoice();
+		Thread.sleep(1000);
+		ord.ClickOnContinue();
+		
+		
+	}
+}

@@ -1,0 +1,27 @@
+package Parametarization;
+
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.util.Scanner;
+
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+
+public class WrittingDynamicExcelData {
+
+	
+	public static void main(String[] args) throws FileNotFoundException {
+		
+		
+		FileOutputStream file = new FileOutputStream(System.getProperty("user.dir")+"\\TestData\\MydyanmicExcel.xlsx");
+		
+		XSSFWorkbook workbook = new XSSFWorkbook();
+		
+		XSSFSheet sheet = workbook.createSheet("DynamicData");
+		
+		Scanner sc = new Scanner(System.in);
+		
+		
+		
+	}
+}

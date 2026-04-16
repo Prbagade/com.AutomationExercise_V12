@@ -1,0 +1,26 @@
+package Parametarization;
+
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+
+public class WrittingExcelData {
+
+	public static void main(String[] args) throws FileNotFoundException {
+
+		
+		FileOutputStream file = new FileOutputStream(System.getProperty("user.dir")+"\\TestData\\Myexcel.xlsx");
+		
+		XSSFWorkbook workbook = new XSSFWorkbook();
+		
+		XSSFSheet sheet=workbook.createSheet("Data");
+		
+		
+		
+		
+		
+	}
+
+}

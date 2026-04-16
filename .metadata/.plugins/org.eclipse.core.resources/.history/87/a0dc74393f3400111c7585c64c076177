@@ -1,0 +1,40 @@
+package Parametarization;
+
+import java.io.FileInputStream;
+import java.io.IOException;
+
+import org.apache.poi.xssf.usermodel.XSSFCell;
+import org.apache.poi.xssf.usermodel.XSSFRow;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+
+public class ExcelData {
+
+	public static void main(String[] args) throws IOException {
+
+		//step 1
+		FileInputStream file = new FileInputStream("C:\\Users\\Prafull\\OneDrive\\Documents\\Book1.xlsx");
+		
+		
+		//step 2
+		XSSFWorkbook book = new XSSFWorkbook(file);
+		
+		//step 3
+		XSSFSheet sheet =book.getSheet("Sheet1");
+		
+		//step 4
+		XSSFRow row=sheet.getRow(0);
+		
+		//step 5
+		XSSFCell col=row.getCell(0);
+		
+		//step 6
+		String str=col.getStringCellValue();
+		
+		//step 7
+		double d=col.getNumericCellValue();
+		
+	}
+
+}
+	

@@ -1,0 +1,11 @@
+package Parametarization;
+
+public class WrittingExcelData {
+
+	public static void main(String[] args) {
+
+		
+		
+	}
+
+}

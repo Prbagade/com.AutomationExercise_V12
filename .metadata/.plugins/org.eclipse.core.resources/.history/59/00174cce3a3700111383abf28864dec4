@@ -1,0 +1,60 @@
+package com.TestBase;
+
+import java.time.Duration;
+import java.util.Properties;
+
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Parameters;
+
+public class BaseClass {
+
+	
+	public static WebDriver driver;
+	public Logger logger;
+	public Properties p;
+	
+	
+	@Parameters({"os","browser"})
+	@BeforeMethod
+	public void OpenBrowser(String os, String brw) 
+	{
+		
+		logger=LogManager.getLogger(this.getClass());
+		
+		switch(brw.toLowerCase()) 
+		{
+		case "chrome" :	driver = new ChromeDriver(); break;
+		case "edge" : driver= new EdgeDriver(); break;
+		default : System.out.println("Invalid browser name");
+		return;
+		
+		}
+		
+		driver.get("https://automationexercise.com/");
+		driver.manage().window().maximize();
+		driver.manage().deleteAllCookies();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+				
+	}
+	
+	
+	@AfterMethod
+	public void CloseBrowser() throws InterruptedException 
+	{
+		Thread.sleep(2000);
+		driver.quit();
+	}
+	
+	
+	
+	
+	
+	
+	
+}

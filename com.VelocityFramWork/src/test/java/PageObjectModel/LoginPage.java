@@ -1,0 +1,42 @@
+package PageObjectModel;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+
+public class LoginPage extends BasePage {
+
+	public LoginPage(WebDriver driver) {
+
+		super(driver);
+	}
+
+	@FindBy(xpath = "//*[text()='New customer? ']")
+	WebElement btn_NewAccount;
+
+	@FindBy(xpath = "//*[@id='CustomerEmail']")
+	WebElement txt_EmailID;
+
+	@FindBy(xpath = "//*[@id='CustomerPassword']")
+	WebElement txt_Password;
+
+	@FindBy(xpath = "(//input[@type='submit'])[1]")
+	WebElement btn_Login;
+
+	public void ClickOnNewAcc() {
+		btn_NewAccount.click();
+	}
+
+	public void EnterEmailID(String emailid) {
+		txt_EmailID.sendKeys(emailid);
+	}
+
+	public void EnterPassword(String pass) {
+		txt_Password.sendKeys(pass);
+	}
+
+	public void ClickOnLogin() {
+		btn_Login.click();
+	}
+
+}

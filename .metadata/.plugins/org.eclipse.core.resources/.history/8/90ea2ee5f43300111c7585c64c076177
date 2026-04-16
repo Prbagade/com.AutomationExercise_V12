@@ -1,0 +1,33 @@
+package DemoSelenium;
+
+import org.openqa.selenium.Alert;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+
+public class PopUpHandling {
+
+	public static void main(String[] args) {
+
+		// simple alert popUp
+
+		WebDriver driver = new EdgeDriver();
+
+		driver.get("https://testautomationpractice.blogspot.com/");
+		driver.manage().window().maximize();
+
+		
+		driver.findElement(By.xpath("//button[@id='alertBtn']")).click();
+		
+		driver.findElement(By.xpath("//button[@id='confirmBtn']")).click();
+		
+		driver.findElement(By.xpath("//button[@id='promptBtn']")).click();
+		
+		Alert alt = driver.switchTo().alert();
+		
+		alt.getText();
+		
+		
+	}
+
+}

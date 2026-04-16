@@ -1,0 +1,27 @@
+package Star_Programm;
+
+public class Patter_0 {
+
+	// Star pattern
+		
+/*	line	astrik
+	 1		1, 
+	 2  	1, 2, 
+	 3 		1, 2, 3
+	 4 		1, 2, 3, 4
+	*/
+
+	public static void main(String[] args) {
+
+
+		for(int line =1; line <=4;line ++ ) 
+		{
+			for(int ast=1;ast<=line;ast++) {
+				
+				System.out.print("* "); //print star
+			}
+			System.out.println(); //print line 
+		}
+				
+	}
+}

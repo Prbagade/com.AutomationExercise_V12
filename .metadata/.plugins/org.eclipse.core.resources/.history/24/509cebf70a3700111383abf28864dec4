@@ -1,0 +1,8 @@
+package com.PageObject;
+
+public class AccountCreatedPage extends BasePage{
+
+	
+	
+	
+}

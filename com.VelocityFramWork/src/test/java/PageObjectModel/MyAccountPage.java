@@ -1,0 +1,31 @@
+package PageObjectModel;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+
+public class MyAccountPage extends BasePage {
+
+	
+	public MyAccountPage(WebDriver driver)
+	{
+		super(driver);
+	}
+	
+	@FindBy(xpath = "(//strong[text()='prafull bagade'])[1]") WebElement ProfileName;
+	
+	
+	@FindBy(xpath = "//*[text()='HOME']") WebElement btn_Home;
+	
+	
+	public void validateProfil() 
+	{
+		ProfileName.isDisplayed();
+	}
+	
+	public void ClickOnHome() 
+	{
+		btn_Home.click();
+	}
+	
+}

@@ -1,0 +1,23 @@
+package TestCases;
+
+import org.testng.annotations.Test;
+
+import PageObjectModel.HomePage;
+import TestBase.BaseClass;
+
+public class TC002_LoginPageTest extends BaseClass{
+
+	
+	@Test
+	public void VerifyLogin() 
+	{
+		
+		HomePage hp = new HomePage(driver);
+		
+		
+		
+		
+	}
+	
+	
+}

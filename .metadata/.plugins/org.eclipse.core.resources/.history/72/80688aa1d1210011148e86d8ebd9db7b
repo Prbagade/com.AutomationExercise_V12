@@ -1,0 +1,27 @@
+package Star_Programm;
+
+import java.util.Scanner;
+
+public class Pattern_Pyramid {
+
+	
+	
+	
+	
+	public static void main(String[] args) {
+		
+//		Scanner sc = new Scanner(System.in);
+//		System.out.println("Enter Star count: ");
+//		int star =sc.nextInt();
+		int star =5;
+		
+		for(int line =1; line<=star;line=+1) 
+		{
+			for(int ast=1; ast<=line;ast++) 
+			{
+				System.out.print(" * ");
+			}
+			System.out.println();
+		}
+	}
+}

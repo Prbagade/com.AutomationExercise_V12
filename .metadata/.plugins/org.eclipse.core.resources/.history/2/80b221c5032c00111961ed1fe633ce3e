@@ -1,0 +1,20 @@
+package Pattern_Star;
+
+public class StarPyramid {
+
+	public static void main(String[] args) {
+		
+		//Star pyramid
+		
+		for(int line=0;line<=5;line++) 
+		{
+			for(int str=0;str<=line;line++) 
+			{
+				System.out.println("*");
+			}
+			System.out.println();
+		}
+
+	}
+
+}

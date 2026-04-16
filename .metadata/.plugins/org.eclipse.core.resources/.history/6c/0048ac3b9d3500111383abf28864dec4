@@ -1,0 +1,47 @@
+package PageObjectModel;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+
+public class RegisterPage extends BasePage{
+
+	
+	public RegisterPage(WebDriver driver) {
+	
+		super(driver);
+	}
+
+	@FindBy(xpath = "//*[@id='-FirstName']") WebElement txt_Fname;
+
+	@FindBy(xpath = "//*[@id='-LastName']") WebElement txt_Lname;
+	
+	@FindBy(xpath = "//*[@id='-email']") WebElement txt_emailID;
+	
+	@FindBy (xpath ="//*[@id='-password']") WebElement txt_Password;
+	
+	@FindBy (xpath ="") WebElement btn_Register;
+
+	
+	public void EnterEmailID(String email) 
+	{
+		txt_EmailID.sendKeys(email);
+	}
+	
+	public void ClickOnContinue() 
+	{
+		btn_continue.click();
+	}
+	
+	
+	public void EnterPassword(String pass) 
+	{
+		txt_Password.sendKeys(pass);
+	}
+	
+	public void ClickOnSignIn() {
+		
+		btn_SignIn.click();
+	}
+	
+}

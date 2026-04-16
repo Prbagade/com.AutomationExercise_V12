@@ -1,0 +1,63 @@
+package com.TestCases;
+
+import org.testng.annotations.Test;
+
+import com.PageObject.AccountCreatedPage;
+import com.PageObject.HomePage;
+import com.PageObject.LoginPage;
+import com.PageObject.RegisterPage;
+import com.TestBase.BaseClass;
+
+public class TC001_RegisterPageTest extends BaseClass{
+
+	
+	
+	@Test(groups= {"Regression","Master"})
+	public void Verify_Register_Account() throws InterruptedException 
+	{
+		logger.info("************starting TC001_RegisterPageTest************");
+		
+		HomePage hp = new HomePage(driver);
+		hp.ClickOnSignIn();
+		logger.info("************Clicking on SignIn************");
+		
+		
+		Thread.sleep(2000);
+		LoginPage lp = new LoginPage(driver);
+
+		logger.info("************Register account************");
+		lp.EnterUserName("praful");
+		lp.EnterEmailId("bantygot8@gmail.com");
+		lp.ClickOnSignUp();
+		
+		logger.info("************User details************");
+		RegisterPage rp = new RegisterPage(driver);
+		rp.SelectGender();
+		rp.EnterPassword("April@1234");
+		rp.SelectDate();
+		rp.SelectMonth();
+		rp.SelectYear();
+		rp.EnterFirstname("Ganesh");
+		rp.EnterLastname("Jadhav");
+		rp.EnterAddess("Bhosari");
+		rp.SelectCountry();
+		rp.EnterState("Maharashtra");
+		rp.EnterCity("Pune");
+		rp.EnterZipcode("444105");
+		rp.EnterMobileNum("9966007744");
+		Thread.sleep(1000);
+		
+		logger.info("************Account created************");
+		rp.ClickOnCreateAcc();
+		
+		AccountCreatedPage myac = new AccountCreatedPage(driver);
+		logger.info("************verify created Account************");
+		myac.validate_Acc();
+		
+		
+		logger.info("************contineu shopping************");
+		myac.ClickOnContineu();
+		
+		
+	}
+}

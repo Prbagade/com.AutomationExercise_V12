@@ -1,0 +1,11 @@
+package TestCases;
+
+import TestBase.BaseClass;
+
+public class TC001_AccountRegisterTest extends BaseClass
+{
+
+	
+	
+	
+}

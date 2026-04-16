@@ -1,0 +1,24 @@
+package DemoSelenium;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class DropDown {
+
+	public static void main(String[] args) {
+		
+		WebDriver driver = new ChromeDriver();
+		
+		driver.get("https://automationexercise.com/signup");
+		
+		driver.findElement(By.xpath("")).sendKeys("pp");
+		driver.findElement(By.xpath("")).sendKeys("bantygot8@gmail.com");
+		driver.findElement(By.xpath("")).click();
+		
+		driver.findElement(By.xpath("//*[@id='days']")).click();
+		
+		driver.findElement(By.xpath("//*[@value=4]")).click();
+		
+	}
+}

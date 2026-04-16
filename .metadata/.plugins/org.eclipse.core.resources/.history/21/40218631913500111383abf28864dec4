@@ -1,0 +1,27 @@
+package PageObjectModel;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+
+public class HomePage {
+	
+	
+	public HomePage(WebDriver driver) 
+	{
+		super(driver);
+	}
+	
+	
+	
+	
+	@FindBy(xpath = "//div[text()='Sign in']") WebElement btn_SignIn;
+	
+//	@FindBy(xpath = "") WebElement xxx;
+	
+	
+	public void ClickOnSignIn() 
+	{
+		btn_SignIn.click();
+	}
+	
+}

@@ -1,0 +1,16 @@
+package Star_Programm;
+
+public class Pattern3_ {
+
+	
+	// Rverside * pattern
+	
+	public static void main(String[] args) {
+		
+		
+		for(int sp=3;sp>=sp--;) 
+		{
+			System.out.print("_");
+		}
+	}
+}
