@@ -1,0 +1,53 @@
+11:57:18:063 [main] INFO  api.TestCases.UserTestCase - *********Creating user**********
+11:57:21:877 [main] INFO  api.TestCases.UserTestCase - *********User is created**********
+11:57:21:891 [main] INFO  api.TestCases.UserTestCase - *********Reading user info**********
+11:57:23:574 [main] INFO  api.TestCases.UserTestCase - *********User info is displayed**********
+11:57:23:577 [main] INFO  api.TestCases.UserTestCase - *********User info is Updating**********
+11:57:25:276 [main] INFO  api.TestCases.UserTestCase - *********User is Updated**********
+11:57:26:911 [main] INFO  api.TestCases.UserTestCase - *********User is Deleting**********
+11:57:28:583 [main] INFO  api.TestCases.UserTestCase - *********User is Deleted**********
+12:04:23:877 [main] DEBUG api.TestCases.UserTestCase - debugging...
+12:04:23:896 [main] INFO  api.TestCases.UserTestCase - *********Creating user**********
+12:04:27:567 [main] INFO  api.TestCases.UserTestCase - *********User is created**********
+12:04:27:574 [main] INFO  api.TestCases.UserTestCase - *********Reading user info**********
+12:04:29:386 [main] INFO  api.TestCases.UserTestCase - *********User info is displayed**********
+12:04:29:388 [main] INFO  api.TestCases.UserTestCase - *********User info is Updating**********
+12:04:32:122 [main] INFO  api.TestCases.UserTestCase - *********User is Updated**********
+12:04:33:854 [main] INFO  api.TestCases.UserTestCase - *********User is Deleting**********
+12:04:35:639 [main] INFO  api.TestCases.UserTestCase - *********User is Deleted**********
+13:39:06:816 [main] INFO  api.TestCases.UserTestCase2 - *********Creating user**********
+13:39:10:856 [main] INFO  api.TestCases.UserTestCase2 - *********Reading user info**********
+13:39:12:819 [main] INFO  api.TestCases.UserTestCase2 - *********User info is Updating**********
+13:39:14:814 [main] INFO  api.TestCases.UserTestCase2 - *********User is Updated**********
+13:39:16:641 [main] INFO  api.TestCases.UserTestCase2 - *********User is Deleting**********
+13:41:43:092 [main] INFO  api.TestCases.UserTestCase2 - *********Creating user**********
+13:41:47:093 [main] INFO  api.TestCases.UserTestCase2 - *********Reading user info**********
+13:41:48:989 [main] INFO  api.TestCases.UserTestCase2 - *********User info is Updating**********
+13:41:50:882 [main] INFO  api.TestCases.UserTestCase2 - *********User is Updated**********
+13:41:52:830 [main] INFO  api.TestCases.UserTestCase2 - *********User is Deleting**********
+13:42:17:362 [main] INFO  api.TestCases.UserTestCase2 - *********Creating user**********
+13:42:21:263 [main] INFO  api.TestCases.UserTestCase2 - *********Reading user info**********
+13:42:23:200 [main] INFO  api.TestCases.UserTestCase2 - *********User info is Updating**********
+13:42:25:052 [main] INFO  api.TestCases.UserTestCase2 - *********User is Updated**********
+13:42:26:992 [main] INFO  api.TestCases.UserTestCase2 - *********User is Deleting**********
+13:45:50:411 [main] INFO  api.TestCases.UserTestCase2 - *********Creating user**********
+13:45:54:233 [main] INFO  api.TestCases.UserTestCase2 - *********Reading user info**********
+13:45:56:313 [main] INFO  api.TestCases.UserTestCase2 - *********User info is Updating**********
+13:45:58:208 [main] INFO  api.TestCases.UserTestCase2 - *********User is Updated**********
+13:46:00:065 [main] INFO  api.TestCases.UserTestCase2 - *********User is Deleting**********
+13:47:22:406 [main] INFO  api.TestCases.UserTestCase2 - *********Creating user**********
+13:47:26:245 [main] INFO  api.TestCases.UserTestCase2 - *********User is created**********
+13:47:26:251 [main] INFO  api.TestCases.UserTestCase2 - *********Reading user info**********
+13:47:28:120 [main] INFO  api.TestCases.UserTestCase2 - *********User info is displayed**********
+13:47:28:123 [main] INFO  api.TestCases.UserTestCase2 - *********User info is Updating**********
+13:47:29:953 [main] INFO  api.TestCases.UserTestCase2 - *********User is Updated**********
+13:47:31:828 [main] INFO  api.TestCases.UserTestCase2 - *********User is Deleting**********
+13:47:33:682 [main] INFO  api.TestCases.UserTestCase2 - *********User is Deleted**********
+13:47:47:185 [main] INFO  api.TestCases.UserTestCase2 - *********Creating user**********
+13:47:51:457 [main] INFO  api.TestCases.UserTestCase2 - *********User is created**********
+13:47:51:470 [main] INFO  api.TestCases.UserTestCase2 - *********Reading user info**********
+13:47:53:402 [main] INFO  api.TestCases.UserTestCase2 - *********User info is displayed**********
+13:47:53:406 [main] INFO  api.TestCases.UserTestCase2 - *********User info is Updating**********
+13:47:55:345 [main] INFO  api.TestCases.UserTestCase2 - *********User is Updated**********
+13:47:57:302 [main] INFO  api.TestCases.UserTestCase2 - *********User is Deleting**********
+13:47:59:151 [main] INFO  api.TestCases.UserTestCase2 - *********User is Deleted**********

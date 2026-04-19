@@ -3,13 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="DayOne.HttpRequest">
+      <class name="api.TestCases.UserTestCase2">
         <methods>
-          <include name="creatUser"/>
-          <include name="updateUser"/>
-          <include name="deleteUser"/>
+          <include name="UserTest"/>
+          <include name="testCreateUser"/>
+          <include name="testGetUser"/>
+          <include name="testDeleteUser"/>
         </methods>
-      </class> <!-- DayOne.HttpRequest -->
+      </class> <!-- api.TestCases.UserTestCase2 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
